@@ -1,1 +1,0 @@
-webpackJsonp([6],{"1iLP":function(t,i,o){"use strict";t.exports=function(t,i,o,n){var s;return s={file:t,h1:i,html:o},void 0!==n&&(s.git=n),PP.post("post",s)}}});
