@@ -1,0 +1,1 @@
+webpackJsonp([6],{"1iLP":function(t,e,i){"use strict";t.exports=function(t,e,i,o){var s,c;return s=PP.F,i=i.replaceAll('="'+s,'="'+s.slice(-3)),c={file:t,h1:e,html:i},void 0!==o&&(c.git=o),PP.post("post",c)}}});
