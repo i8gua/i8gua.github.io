@@ -1,4 +1,4 @@
-# 这是什么？
+# 为什么起名为『八卦博客』？
 ## 引子
 
 神父[若阿基姆·布韦](https://zh.wikipedia.org/wiki/%E8%8B%A5%E9%98%BF%E5%9F%BA%E5%A7%86%C2%B7%E5%B8%83%E9%9F%8B "若阿基姆·布韦")（Joachim Bouvet，中文名白晋，1662－1732年）向莱布尼茨介绍了《[周易](https://zh.wikipedia.org/wiki/%E5%91%A8%E6%98%93 "周易")》和[八卦](https://zh.wikipedia.org/wiki/%E5%85%AB%E5%8D%A6 "八卦")系统。
@@ -23,10 +23,14 @@
 
 ## 序言
 
-我喜欢 MARKDOWN ，也喜欢所见即所得。
+喜欢 MARKDOWN ，也喜欢所见即所得。
 
-我喜欢 GITHUB PAGE，也喜欢在线编辑器。
+喜欢 GITHUB PAGE，也喜欢在线编辑器。
 
 既然都喜欢，何必要取舍。
 
-，。
+于是，我开始编写『八卦博客』。
+
+一款能在线编辑，以所见即所得方式书写，存档格式为Markdown，支持部署到GITHUB PAGE的动静结合的博客。
+
+之所以去买

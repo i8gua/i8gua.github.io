@@ -1,5 +1,5 @@
 * [使用指南](help)
- * [这是什么？](help/what.md)
- * [更新日志](help/log.md)
+ * [为什么起名为『八卦博客』？](help/what.md)
  * [八卦博客 · 说明书](help/index.md)
  * [八卦博客 · 安装手册](help/setup.md)
+ * [更新日志](help/log.md)
