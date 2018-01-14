@@ -2,4 +2,4 @@
  * [这是什么？](help/what.md)
  * [更新日志](help/log.md)
  * [八卦博客 · 说明书](help/index.md)
- * [这是什么？](help/setup.md)
+ * [八卦博客 · 安装手册](help/setup.md)
