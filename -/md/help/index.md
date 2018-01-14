@@ -28,9 +28,8 @@
 ## 手册
 
 1.  [安装指南](/help/setup)
-2.  [markdown语法说明](/help/markdown)
-3.  [常见问题](/help/qa)
-4.  [更新日志](/help/log)
+2.  [更新日志](/help/log)  
+    
 
 ## 链接
 
