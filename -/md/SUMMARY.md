@@ -1,4 +1,4 @@
-* [使用指南](help)
+* [帮助](help)
  * [八卦博客 · 说明文档](help/index.md)
  * [八卦博客 · 安装手册](help/setup.md)
  * [八卦博客 · 更新日志](help/log.md)
