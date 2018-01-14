@@ -1,5 +1,5 @@
 * [使用指南](help)
  * [这是什么？](help/what.md)
- * [这是什么？](help/log.md)
+ * [更新日志](help/log.md)
  * [这是什么？](help/index.md)
  * [这是什么？](help/setup.md)
