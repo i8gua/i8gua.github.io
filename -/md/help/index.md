@@ -1,4 +1,4 @@
-# 八卦博客
+# 八卦博客 · 说明书
 本站由八卦博客（[8GUA.BLOG](https://8GUA.BLOG)）构建。
 
 ## 序言
@@ -43,7 +43,6 @@
 1.  码云 [i8gua.gitee.io](https://i8gua.gitee.io)
 2.  GITHUB [i8gua.github.io](https://i8gua.github.io)
 3.  BITBUCKET [8gua.bitbucket.io](https://8gua.bitbucket.io)
-    
 
 ### 关于
 
