@@ -23,7 +23,7 @@
 
 ## 序言
 
-我喜欢 MARKDOWN ，也喜欢所见即所得。  
+我喜欢 MARKDOWN ，也喜欢所见即所得。
 
 我喜欢 GITHUB PAGE，也喜欢在线编辑器。
 

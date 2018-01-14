@@ -1,2 +1,5 @@
 * [使用指南](help)
- * [这是什么？](help/2018-01-14.md)
+ * [这是什么？](help/what.md)
+ * [这是什么？](help/log.md)
+ * [这是什么？](help/index.md)
+ * [这是什么？](help/setup.md)
