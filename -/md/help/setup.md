@@ -4,3 +4,11 @@
 1.  安装 npm
 2.  npm install 8gua
 3.  执行 8gua
+
+## 部署到NGINX
+
+既然是静态博客，自然可以随处部署。
+
+比如，nginx配置文件请参考 [这里](https://gitee.com/u8gua/tool/blob/master/nginx.8gua.conf) 。
+
+其中用到的https免费证书，可使用 [acme.sh](https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E) 来自动生成。
