@@ -35,7 +35,8 @@
 
 ### 官网
 
-[8gua.blog](https://8gua.blog)
+*   [8gua.blog](https://8gua.blog)  
+    
 
 在码云、GITHUB、BITBUCKET都有同步的官网镜像。
 
