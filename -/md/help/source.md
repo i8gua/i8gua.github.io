@@ -39,3 +39,5 @@
 > 又隐含了最严谨的计算机逻辑。**
 
 太极阴阳，动静结合，很适合活在量子叠加态中的我。
+
+![150448940278434.png](/-/S/png/INv7njWdpWdkn7aMw_y4lAuAn5MDeBa92LErVw.png)
