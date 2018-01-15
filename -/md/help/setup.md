@@ -8,7 +8,7 @@
 
 ## 部署到私有服务器
 
-既然是静态博客，自然可以随处部署。
+静态博客，自然可以随处部署。
 
 比如，nginx配置文件请参考 [这里](https://gitee.com/u8gua/tool/blob/master/nginx.8gua.conf) 。
 
