@@ -28,7 +28,8 @@
 ## 手册
 
 1.  [安装指南](/help/setup)
-2.  [更新日志](/help/log)  
+2.  [更新日志](/help/log)
+3.  [项目源起](/help/source)  
     
 
 ## 链接
