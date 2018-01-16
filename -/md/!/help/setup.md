@@ -10,6 +10,6 @@
 
 静态博客，自然可以随处部署。
 
-比如，nginx配置文件请参考 [这里](https://gitee.com/u8gua/tool/blob/master/nginx.8gua.conf) 。
+nginx配置文件[参考这里](https://gitee.com/u8gua/tool/blob/master/nginx.8gua.conf) ，其中用到的https免费证书，可使用 [acme.sh](https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E) 来自动生成。  
 
-其中用到的https免费证书，可使用 [acme.sh](https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E) 来自动生成。
+caddy配置文件[参考这里](https://gitee.com/u8gua/tool/blob/master/Caddyfile)。
