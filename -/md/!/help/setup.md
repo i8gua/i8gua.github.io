@@ -36,7 +36,7 @@ caddy配置文件[参考这里](https://gitee.com/u8gua/tool/blob/master/Caddyfi
     git add id_rsa.enc 
     ```
     
-    然后请把 .travis.yml 中 openssl 这一行的 ~\\/.ssh 改为 ~/.ssh
+    然后，请把 .travis.yml 中 openssl 这一行的 ~\\/.ssh 改为 ~/.ssh
     
 6.  在私有服务器上git clone代码仓库到目录
     
