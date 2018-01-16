@@ -20,17 +20,21 @@ caddy配置文件[参考这里](https://gitee.com/u8gua/tool/blob/master/Caddyfi
 
 可以使用[Travis CI](https://travis-ci.org/)配合github来实现此需求。
 
-1.  在本机安装travis (先确保ruby已经安装，gem命令可用)。  
-    sudo gem install travis  
+1.  访问 [travis-ci.com](https://travis-ci.com/) ，打开项目构建开关  
     
-2.  运行 travis login ， 输入github的用户名密码。  
+2.  在本机安装travis (先确保ruby已经安装，gem命令可用)。  
+    sudo gem install travis
     
-3.  在仓库根目录新建 .travis.yml ，并git add
-4.  用travis加密添加登录是有服务器的私钥到仓库  
-    travis encrypt-file ~/.ssh/id_rsa  --add  
-    git add id_rsa.enc  
+3.  运行 travis login ， 输入github的用户名密码。
     
-5.  在私有服务器上git clone代码仓库到目录
-6.  参考[此配置文件](https://gitee.com/u8gua/tool/blob/master/.travis.yml)，修改你的.travis.yml
+4.  在仓库根目录新建 .travis.yml ，并git add
     
-7.  访问 [travis-ci.com](https://travis-ci.com) ，打开项目构建开关，然后push仓库，即可实现自动触发更新
+5.  用travis加密添加登录是有服务器的私钥到仓库  
+    travis encrypt-file ~/.ssh/id_rsa --add  
+    git add id_rsa.enc
+    
+6.  在私有服务器上git clone代码仓库到目录
+    
+7.  参考[此配置文件](https://gitee.com/u8gua/tool/blob/master/.travis.yml)，修改你的.travis.yml
+    
+8.  push仓库，即可实现自动触发更新
