@@ -29,12 +29,10 @@ caddy配置文件[参考这里](https://gitee.com/u8gua/tool/blob/master/Caddyfi
     
 4.  在仓库根目录新建 .travis.yml ，并git add
     
-5.  用travis加密添加登录是有服务器的私钥到仓库  
+5.  用travis加密添加登录是有服务器的私钥到仓库
     
-    ```
-    travis encrypt-file ~/.ssh/id_rsa --add  
-    git add id_rsa.enc
-    ```然后请把 .travis.yml 中 openssl 这一行的  ~\\/.ssh 改为 ~/.ssh
+    `travis encrypt-file ~/.ssh/id_rsa --add git add id_rsa.enc  
+    `然后请把 .travis.yml 中 openssl 这一行的 ~\\/.ssh 改为 ~/.ssh
     
 6.  在私有服务器上git clone代码仓库到目录
     
