@@ -1,7 +1,2 @@
-* [帮助](help)
- * [八卦博客 · 说明文档](help/help.md)
- * [八卦博客 · 安装部署](help/setup.md)
- * [八卦博客 · 更新日志](help/log.md)
- * [八卦博客 · 项目源起](help/source.md)
 * [思绪](think)
  * [论善](think/2018-01-15.md)
