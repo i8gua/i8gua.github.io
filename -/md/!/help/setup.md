@@ -16,7 +16,7 @@ caddy配置文件[参考这里](https://gitee.com/u8gua/tool/blob/master/Caddyfi
 
 ### 持续集成
 
-所谓持续集成，就是当你push改动后，在私有服务器自动触发pull更新代码。
+持续集成，就是当后台自动push修改后，私有服务器上自动更新网页。
 
 可以使用[Travis CI](https://travis-ci.org/)配合github来实现此需求。
 
@@ -43,3 +43,8 @@ caddy配置文件[参考这里](https://gitee.com/u8gua/tool/blob/master/Caddyfi
 7.  参考[此配置文件](https://gitee.com/u8gua/tool/blob/master/.travis.yml)，修改你的.travis.yml
     
 8.  push仓库，即可实现自动触发更新
+    
+
+#### 拓展阅读 
+
+*   [持续集成服务 Travis CI 教程](http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html)
