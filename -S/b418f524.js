@@ -1,1 +1,0 @@
-webpackJsonp([21],{WC9k:function(n,t,e){"use strict";n.exports=function(n){var t=(n.file,n.editor);return e.e(13).then(e.bind(null,"5DaS")).then(function(n){n().then(function(n){return t.load_md("~/"+n+".md","")})})}}});
