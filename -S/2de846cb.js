@@ -1,1 +1,0 @@
-webpackJsonp([22],{thX5:function(n,t,e){"use strict";n.exports=function(n){var t=(n.file,n.editor);return e.e(11).then(e.bind(null,"N59X")).then(function(n){n().then(function(n,e){return t.load_md("~/"+n+".md",e)})})}}});
