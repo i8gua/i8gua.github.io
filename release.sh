@@ -18,10 +18,10 @@ git archive master | tar -x -C $release
 cd $release
 
 
-rm -rf .gitignore release.sh id_rsa.enc ./-/md/help release
+mv release/SUMMARY.md ./-/md/~/SUMMARY.md
+rm -rf .gitignore release.sh id_rsa.enc ./-/md/help release ./-/md/$
 > ./-/init.toml
 > ./-/md/SUMMARY.md
-> ./-/md/~/SUMMARY.md
 
 git add .
 cp $PREFIX/.gitignore $release
