@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+PREFIX=$(cd "$(dirname "$0")"; pwd)
+cd $PREFIX
+
+git add -u && git commit -m '.' ;
+
+
+release=$PREFIX/../release/`basename $PREFIX`
+
+cd $release
+git rm * -rf
+rm -rf *
+
+cd $PREFIX
+git archive master | tar -x -C $release
+
+cd $release
+
+
+rm -rf .gitignore release.sh id_rsa.enc ./-/md/help release
+> ./-/init.toml
+> ./-/md/SUMMARY.md
+> ./-/md/~/SUMMARY.md
+
+git add .
+cp $PREFIX/.gitignore $release
+git add .gitignore
+git commit -m 'release'
+git push
+
+
