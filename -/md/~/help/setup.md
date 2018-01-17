@@ -45,6 +45,6 @@ caddy配置文件[参考这里](https://gitee.com/u8gua/tool/blob/master/Caddyfi
 8.  push仓库，即可实现自动触发更新
     
 
-#### 拓展阅读 
+#### 拓展阅读
 
 *   [持续集成服务 Travis CI 教程](http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html)
