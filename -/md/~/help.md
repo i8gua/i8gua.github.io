@@ -31,9 +31,7 @@
 2.  [更新日志](/~help/log)
 3.  [项目源起](/~help/source)
 
-## 链接
-
-### 官网
+## 官网  
 
 *   [8GUA.BLOG](https://8gua.blog)
 
@@ -43,6 +41,6 @@
 2.  GITHUB [i8gua.github.io](https://i8gua.github.io)
 3.  BITBUCKET [8gua.bitbucket.io](https://8gua.bitbucket.io)
 
-### 关于
+## 联系方式
 
-您可以通过邮箱联系我 [i@8gua.blog](mailto:i@8gua.blog)
+邮箱 : [i@8gua.blog](mailto:i@8gua.blog)
