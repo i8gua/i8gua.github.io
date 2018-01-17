@@ -1,1 +1,0 @@
-webpackJsonp([22],{rSme:function(e,n,t){"use strict";e.exports=function(e){var n,o=e.h1,i=e.file,r=e.editor,s=e.box;n=o.val(),s=$(this).closest(".Pbox")[0],t.e(8).then(t.bind(null,"1iLP")).then(function(e){return e(i,n,r.getContent(),{dir:"~"}).done(function(e){s._rm(),$.box.alert("『"+$.escape(n||"无题")+"』保存成功"),e&&(e=i.slice(2,-3),GO.push("/~"+e))})})}}});
