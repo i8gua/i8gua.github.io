@@ -28,5 +28,8 @@ cp $PREFIX/.gitignore $release
 git add .gitignore
 git commit -m 'release'
 git push
+git push github
+
+
 
 
