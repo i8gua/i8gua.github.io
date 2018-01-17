@@ -31,9 +31,9 @@ caddy配置文件[参考这里](https://gitee.com/u8gua/tool/blob/master/Caddyfi
     
 5.  用travis加密添加登录是有服务器的私钥到仓库
     
-    ```travis encrypt-file ~/.ssh/id_rsa --add``` 
-
-    ```git add id_rsa.enc```
+    `travis encrypt-file ~/.ssh/id_rsa --add`
+    
+    `git add id_rsa.enc`
     
     然后，请把 .travis.yml 中 openssl 这一行的 ~\\/.ssh 改为 ~/.ssh
     
