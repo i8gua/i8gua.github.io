@@ -12,21 +12,23 @@
 3.  git clone 代码到本机，请通过ssh的方式克隆，以确保git push不需要输入密码
     
 4.  进入代码目录，执行安装脚本  
+    
+    ```
     cd 8gua-test.github.io  
     curl -Ls [https://git.io/vNRzu](https://git.io/vNRzu) | bash /dev/stdin
+    ```
     
-5.  部署代码  
+5.  部署代码
     
     ```
     git add . 
     git commit -m"init"
-    git push -f
+    git push -f 
     ```
-    
-6.  访问网站 
+6.  访问网站
     
 
-命令用法  
+命令用法
 
 运行
 
