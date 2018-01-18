@@ -1,26 +1,24 @@
 # 八卦博客 · 安装部署
 ## 如何安装
 
-  
+### MAC 系统
 
-MAC 系统
+我们以github page为例（同样支持bitbucket page、gitee page）
 
- 我们以github page为例（同样支持bitbucket page、gitee page）
-
-1.  访问 [https://github.com/organizations/new](https://github.com/organizations/new) 新建组织，比如 8gua-test  
+1.  访问 [https://github.com/organizations/new](https://github.com/organizations/new) 新建组织，比如 8gua-test
     
-2.  在组织下面创建项目，项目名为『组织名称.github.io』( 比如 [8gua-test.github.io](http://8gua-test.github.io) )  
+2.  在组织下面创建项目，项目名为『组织名称.github.io』( 比如 [8gua-test.github.io](http://8gua-test.github.io) )
     
-3.   通过ssh的方式，git clone 代码到本机，（确保git push不需要输入密码）  
+3.  通过ssh的方式，git clone 代码到本机，（确保git push不需要输入密码）
     
 4.  进入代码目录，执行安装脚本  
-    cd 8gua-test.github.io  
-    curl -Ls [https://git.io/vNRzu](https://git.io/vNRzu) | bash /dev/stdin  
+    cd 8gua-test.github.io  
+    curl -Ls [https://git.io/vNRzu](https://git.io/vNRzu) | bash /dev/stdin
     
 5.  部署代码  
     git add . ; git commit -m"init";git push -f
-6.  访问网站  [8gua-test.github.io](http://8gua-test.github.io/)  
     
+6.  访问网站 [8gua-test.github.io](http://8gua-test.github.io/)
 
 ## 部署到私有服务器
 
