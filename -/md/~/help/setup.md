@@ -5,18 +5,16 @@
 
 我们以github page为例（同样支持bitbucket page、gitee page）
 
-1.  访问 [https://github.com/organizations/new](https://github.com/organizations/new) 新建组织，比如 8gua-test
+1.  [点击这里](https://github.com/organizations/new)，在github上新建组织，比如 8gua-test
     
 2.  在组织下面创建项目，项目名为『组织名称.github.io』( 比如 [8gua-test.github.io](http://8gua-test.github.io) )
     
 3.  git clone 代码到本机，请通过ssh的方式克隆，以确保git push不需要输入密码
     
-4.  进入代码目录，执行安装脚本
-    
-    ```
+4.  进入代码目录，执行安装脚本  
     cd [8gua-test.github.io](http://8gua-test.github.io)  
-    curl -Ls [https://git.io/vNRzu](https://git.io/vNRzu)) | bash /dev/stdin 
-    ```
+    curl -Ls [https://git.io/vNRzu](https://git.io/vNRzu) | bash /dev/stdin  
+    
 5.  部署代码
     
     ```
