@@ -31,7 +31,7 @@
 2.  [更新日志](/~help/log)
 3.  [项目源起](/~help/source)
 
-## 官网  
+## 官网
 
 *   [8GUA.BLOG](https://8gua.blog)
 
@@ -43,4 +43,4 @@
 
 ## 联系方式
 
-邮箱 : [i@8gua.blog](mailto:i@8gua.blog)
+邮箱 : [i@8gua.blog](mailto:i@8gua.blog)
