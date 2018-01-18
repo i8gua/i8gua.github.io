@@ -1,4 +1,4 @@
-# 八卦博客 · 安装部署
+# 八卦博客 · 开始使用
 ## 如何安装
 
 ### MAC 系统
@@ -19,6 +19,21 @@
     git add . ; git commit -m"init";git push -f
     
 6.  访问网站 [8gua-test.github.io](http://8gua-test.github.io/)
+    
+
+## 命令用法
+
+运行
+
+```
+8gua -h
+```
+
+可以查看帮助，如果需要查看某个命令的参数的帮助，比如get命令，可以运行
+
+```
+8gua -h get
+```
 
 ## 部署到私有服务器
 
