@@ -9,19 +9,24 @@
     
 2.  在组织下面创建项目，项目名为『组织名称.github.io』( 比如 [8gua-test.github.io](http://8gua-test.github.io) )
     
-3.  通过ssh的方式，git clone 代码到本机，（确保git push不需要输入密码）
+3.  git clone 代码到本机，请通过ssh的方式克隆，以确保git push不需要输入密码
     
 4.  进入代码目录，执行安装脚本  
     cd 8gua-test.github.io  
     curl -Ls [https://git.io/vNRzu](https://git.io/vNRzu) | bash /dev/stdin
     
 5.  部署代码  
-    git add . ; git commit -m"init";git push -f
     
-6.  访问网站 [8gua-test.github.io](http://8gua-test.github.io/)
+    ```
+    git add . 
+    git commit -m"init"
+    git push -f
+    ```
+    
+6.  访问网站 
     
 
-## 命令用法
+命令用法  
 
 运行
 
@@ -40,7 +45,7 @@
 如果你不小心在其他目录运行了8gua，多了一堆模板文件，可以运行以下的命令来清理。
 
 ```
-git clean -f -d
+git clean -f -d 
 ```
 
 ## 部署到私有服务器
