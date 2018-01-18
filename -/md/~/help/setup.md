@@ -1,11 +1,25 @@
 # 八卦博客 · 安装部署
 ## 如何安装
 
-1.  安装 node.js ([安装教程](http://www.runoob.com/nodejs/nodejs-install-setup.html)) 和 git ([安装教程](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git))
-2.  npm install -g 8gua --registry=[https://registry.npm.taobao.org](https://registry.npm.taobao.org)
-3.  创建并克隆页面仓库（如： [码云页面](http://git.mydoc.io/?t=154714) 、[GITHUB PAGE](https://pages.github.com/) 、[BITBUCKET PAGE](https://pages.bitbucket.io/) ）
+  
+
+MAC 系统
+
+ 我们以github page为例（同样支持bitbucket page、gitee page）
+
+1.  访问 [https://github.com/organizations/new](https://github.com/organizations/new) 新建组织，比如 8gua-test  
     
-4.  到仓库目录下执行 8gua
+2.  在组织下面创建项目，项目名为『组织名称.github.io』( 比如 [8gua-test.github.io](http://8gua-test.github.io) )  
+    
+3.   通过ssh的方式，git clone 代码到本机，（确保git push不需要输入密码）  
+    
+4.  进入代码目录，执行安装脚本  
+    cd 8gua-test.github.io  
+    curl -Ls [https://git.io/vNRzu](https://git.io/vNRzu) | bash /dev/stdin  
+    
+5.  部署代码  
+    git add . ; git commit -m"init";git push -f
+6.  访问网站  [8gua-test.github.io](http://8gua-test.github.io/)  
     
 
 ## 部署到私有服务器
