@@ -35,29 +35,29 @@
 可以查看帮助，如果需要查看某个命令的参数的帮助，比如get命令，可以运行
 
 ```
-8gua -h get
+8gua -h get 
 ```
 
 ### Linux
 
 先用系统的包管理安装node和git 。
 
-系统包中node版本有时候太老，我们运行以下命令更新。  
+系统包中node版本有时候太老，我们运行以下命令更新。
 
 ```
 npm install -g n
-n stable
+n stable 
 ```
 
 接下来安装8gua
 
 ```
-npm install -g 8gua
+npm install -g 8gua 
 ```
 
 最后，同样，进入github page仓库的目录，运行8gua
 
-小技巧  
+## 小技巧
 
 如果你不小心在其他目录运行了8gua，多了一堆模板文件，可以运行以下的命令来清理。
 
