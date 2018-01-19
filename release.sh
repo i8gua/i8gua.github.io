@@ -20,7 +20,7 @@ cd $release
 
 mv release/SUMMARY.md ./-/md/\!/SUMMARY.md
 mv release/about.md ./-/md/\!/about.md
-rm -rf .gitignore release.sh id_rsa.enc ./-/md/help release ./-/md/$ .travis.yml
+rm -rf .gitignore release.sh id_rsa.enc ./-/md/help release ./-/md/$ .travis.yml ./-/S
 > ./-/init.toml
 > ./-/md/SUMMARY.md
 
