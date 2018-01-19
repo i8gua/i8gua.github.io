@@ -3,7 +3,8 @@
 PREFIX=$(cd "$(dirname "$0")"; pwd)
 cd $PREFIX
 
-git add -u && git commit -m '.' ;
+git add -u ;
+git commit -m '.' ;
 
 
 release=$PREFIX/../release/`basename $PREFIX`
