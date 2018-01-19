@@ -10,7 +10,7 @@ git commit -m '.' ;
 release=$PREFIX/../release/`basename $PREFIX`
 
 cd $release
-git rm * -rf
+#git rm * -rf
 rm -rf *
 
 cd $PREFIX
