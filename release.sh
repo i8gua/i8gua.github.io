@@ -18,7 +18,7 @@ git archive master | tar -x -C $release
 cd $release
 
 
-mv release/SUMMARY.md ./-/md/~/SUMMARY.md
+mv release/SUMMARY.md ./-/md/\!/SUMMARY.md
 rm -rf .gitignore release.sh id_rsa.enc ./-/md/help release ./-/md/$ .travis.yml
 > ./-/init.toml
 > ./-/md/SUMMARY.md
