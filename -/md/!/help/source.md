@@ -19,7 +19,7 @@
 
 目前在德国[图林根](https://zh.wikipedia.org/wiki/%E5%9B%BE%E6%9E%97%E6%A0%B9 "图林根")，著名的郭塔王宫图书馆（Schlossbibliothek zu Gotha）内仍保存一份莱布尼茨的手稿，标题写着：
 
-`1与0，一切数字的神奇渊源。`
+> 1与0，一切数字的神奇渊源。
 
 ## 源起
 
