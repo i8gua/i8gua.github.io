@@ -3,7 +3,7 @@
 
 八卦博客主要由以下几个项目构成
 
-*   前端代码 [https://github.com/8gua-blog/8gua-blog](https://github.com/8gua-blog/8gua-blog)  
+*   前端代码 [https://github.com/8gua-blog/blog](https://github.com/8gua-blog/blog)  
     前端打包发布用了一个单独的仓库 [https://gitee.com/blog-8gua/blog-8gua](https://gitee.com/blog-8gua/blog-8gua)
     
 *   命令行 [https://github.com/8gua-blog/8gua-cli](https://github.com/8gua-blog/8gua-cli)
