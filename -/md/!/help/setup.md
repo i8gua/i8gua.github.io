@@ -3,7 +3,7 @@
 
 ### MAC 系统
 
-我们以github page为例（同样支持bitbucket page、gitee page）
+我们以[GITHUB PAGE](https://pages.github.com)为例（同样支持[码云页面](http://git.mydoc.io/?t=154714) 、 、[BITBUCKET PAGE](https://pages.bitbucket.io) ）
 
 1.  [点击这里](https://github.com/organizations/new)，在github上新建组织，比如 8gua-test
     
