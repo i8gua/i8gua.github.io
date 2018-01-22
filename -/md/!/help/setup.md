@@ -15,15 +15,14 @@
     ```
     [remote "origin"] 
         url = https://用户名:密码@github.com/组织名/项目名.git
-        fetch = +refs/heads/*:refs/remotes/origin/*
+        fetch = +refs/heads/*:refs/remotes/origin/* 
     ```
-4.  进入代码目录，执行安装脚本  
+4.  进入代码目录，执行安装脚本
     
     ```
     cd 8gua-test.github.io  
-    curl -Ls https://git.io/vNRzu | bash /dev/stdin
+    curl -Ls https://git.io/vNRzu | bash /dev/stdin 
     ```
-    
 5.  部署代码
     
     ```
@@ -33,21 +32,7 @@
     ```
 6.  访问网站
 
-命令用法
-
-运行
-
-```
-8gua -h 
-```
-
-可以查看帮助，如果需要查看某个命令的参数的帮助，比如get命令，可以运行
-
-```
-8gua -h get 
-```
-
-### Linux
+## Linux  
 
 先用系统的包管理安装node和git 。
 
@@ -65,6 +50,20 @@ npm install -g 8gua
 ```
 
 最后，同样，进入github page仓库的目录，运行8gua
+
+## 8gua 命令用法
+
+运行
+
+```
+8gua -h 
+```
+
+可以查看帮助，如果需要查看某个命令的参数的帮助，比如get命令，可以运行
+
+```
+8gua -h get 
+```
 
 ## 小技巧
 
