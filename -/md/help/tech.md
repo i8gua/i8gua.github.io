@@ -21,6 +21,8 @@
 
 前端基于coffeescript、scss，构建工具为webpack，轻度使用了vue，重度使用了jquery。
 
+首页站点标题的中文字体使用了 font-spider来生成，由于github page缓存的原因，通常需要等十分钟才能生效。
+
 文本编辑器基于medium-editor，发布时会通过turndown将html转为markdown，保存在 ./-/md 目录下（[比如，此文档的内容](https://gitee.com/i8gua/i8gua/tree/master/-/md/help)）。
 
 后端基于[fastify](https://github.com/fastify)、[websockets/ws](https://github.com/websockets/ws) 。
@@ -39,7 +41,7 @@
 
 [实现代码见这里](https://gitee.com/u8gua/plugin-timer)，插件启用参见 [blog/src/coffee/plugin.coffee](https://gitee.com/u8gua/blog/blob/master/src/coffee/plugin.coffee) ，需要重新打包发版。
 
-#### https证书 
+#### https证书
 
 [https://github.com/8gua-blog/8gua-blog-ssl](https://github.com/8gua-blog/8gua-blog-ssl)  
 safari浏览器ajax请求127.0.0.1时如不使用https， 会被阻断，所以需要一个https证书
