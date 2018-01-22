@@ -2,5 +2,5 @@
  * [站点说明](help/readme.md)
  * [八卦博客 · 开始使用](help/setup.md)
  * [八卦博客 · 项目源起](help/source.md)
- * [八卦博客 · 更新日志](help/log.md)
  * [八卦博客 · 技术细节](help/tech.md)
+ * [八卦博客 · 更新日志](help/log.md)
