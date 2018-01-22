@@ -29,6 +29,8 @@
 
 更多依赖库参见 [前端的package.json](https://github.com/8gua-blog/blog/blob/master/src/package.json) ，[后端的package.json](https://github.com/8gua-blog/8gua-srv/blob/master/package.json) 。
 
+所有图标都来自 [ICONFONT.CN](http://iconfont.cn/) ，这是神器。
+
 ## 小技巧
 
 目录 \- 和 ! ，命令行直接操作(比如 cd -)会保存，请用 cd ./- 即可。
