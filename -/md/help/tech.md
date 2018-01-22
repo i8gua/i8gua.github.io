@@ -17,9 +17,11 @@
 
 当用户发布文章时，服务进程能自动推送更新到事前绑定git仓库。
 
-## 技术栈
+## 技术碎碎念
 
 前端基于coffeescript、scss，构建工具为webpack，轻度使用了vue，重度使用了jquery。
+
+导航基于vue router，github上用自定义404页面实现了任意路径访问。只是，微信客户端会把404响应都重定向到寻找失踪小孩，太囧，想避免此问题，只能自己部署。
 
 首页站点标题的中文字体使用了 font-spider来生成，由于github page缓存的原因，通常需要等十分钟才能生效。
 
@@ -29,7 +31,7 @@
 
 更多依赖库参见 [前端的package.json](https://github.com/8gua-blog/blog/blob/master/src/package.json) ，[后端的package.json](https://github.com/8gua-blog/8gua-srv/blob/master/package.json) 。
 
-所有图标都来自 [ICONFONT.CN](http://iconfont.cn/) ，这是神器。
+所有图标都来自 [ICONFONT.CN](http://iconfont.cn/) ，这是神器。
 
 ## 小技巧
 
