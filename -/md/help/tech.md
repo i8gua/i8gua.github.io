@@ -28,7 +28,7 @@
 
 后端基于[fastify](https://github.com/fastify)、[websockets/ws](https://github.com/websockets/ws) 。
 
-更多依赖库参见 [前端的package.json](https://github.com/8gua-blog/blog/blob/master/src/package.json) ，[后端的package.json](8gua-blog/8gua-srv/blob/master/package.json) 。
+更多依赖库参见 [前端的package.json](https://github.com/8gua-blog/blog/blob/master/src/package.json) ，[后端的package.json](https://github.com/8gua-blog/8gua-srv/blob/master/package.json) 。  
 
 ## 后续开发
 
