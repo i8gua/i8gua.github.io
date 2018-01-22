@@ -36,6 +36,6 @@
 
 也有很多小的细节优化可以去做，比如支持图片压缩剪裁、利用service worker加速网站访问、编写linux init.d启动脚本等等。
 
-[任务列表见这里](https://github.com/i8gua/i8gua.github.io/issues)，欢迎大家参与并贡献代码。  
+[任务列表见这里](https://github.com/i8gua/i8gua.github.io/issues?q=is%3Aissue+is%3Aopen+label%3ATODO)，欢迎大家参与并贡献代码。
 
 我的邮箱 [i@8gua.blog](mailto:i@8gua.blog)
