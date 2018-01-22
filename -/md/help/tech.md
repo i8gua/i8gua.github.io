@@ -28,13 +28,13 @@
 
 后端基于[fastify](https://github.com/fastify)、[websockets/ws](https://github.com/websockets/ws) 。
 
-更多依赖库参见 [前端的package.json](https://github.com/8gua-blog/blog/blob/master/src/package.json) ，[后端的package.json](https://github.com/8gua-blog/8gua-srv/blob/master/package.json) 。  
+更多依赖库参见 [前端的package.json](https://github.com/8gua-blog/blog/blob/master/src/package.json) ，[后端的package.json](https://github.com/8gua-blog/8gua-srv/blob/master/package.json) 。
 
 ## 后续开发
 
-接下来，我第一序列的任务是用户和评论系统。
+接下来，我第一序列的任务是用户和评论系统，第二序列的任务是适配windows系统。
 
-也有很多小的细节优化可以去做，比如支持图片压缩剪裁、利用service worker加速网站访问等等。
+也有很多小的细节优化可以去做，比如支持图片压缩剪裁、利用service worker加速网站访问、编写linux init.d启动脚本等等。
 
 欢迎大家参与并贡献代码。
 
