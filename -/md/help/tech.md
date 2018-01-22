@@ -22,10 +22,20 @@
 
 ## 技术栈
 
-前端基于coffeescript、scss。轻度使用了vue，重度使用了jquery。  
+前端基于coffeescript、scss，构建工具为webpack，轻度使用了vue，重度使用了jquery。
 
-文本编辑器基于medium-editor，发布时会通过turndown将html转为markdown，保存在 ./-/md 目录下（[比如，此文档的内容](https://gitee.com/i8gua/i8gua/tree/master/-/md/help)）。  
+文本编辑器基于medium-editor，发布时会通过turndown将html转为markdown，保存在 ./-/md 目录下（[比如，此文档的内容](https://gitee.com/i8gua/i8gua/tree/master/-/md/help)）。
 
-后端基于[fastify](https://github.com/fastify)、[websockets/ws](https://github.com/websockets/ws) 。
+后端基于[fastify](https://github.com/fastify)、[websockets/ws](https://github.com/websockets/ws) 。
 
 更多依赖库参见 [前端的package.json](https://github.com/8gua-blog/blog/blob/master/src/package.json) ，[后端的package.json](8gua-blog/8gua-srv/blob/master/package.json) 。
+
+## 后续开发
+
+接下来，我第一序列的任务是用户和评论系统。
+
+也有很多小的细节优化可以去做，比如支持图片压缩剪裁、利用service worker加速网站访问等等。
+
+欢迎大家参与并贡献代码。
+
+我的邮箱 [i@8gua.blog](mailto:i@8gua.blog)
