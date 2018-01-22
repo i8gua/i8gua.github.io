@@ -11,7 +11,10 @@
     
 3.  git clone 代码到本机，请通过ssh的方式克隆，以确保git push不需要输入密码  
     如果不想配置密钥，可以参考如下的在 .git/config 中写入用户名、密码  
-    url = [https://用户名:密码@github.com/组织名/项目名.git](https://用户名:密码@github.com/组织名/项目名.git)  
+    
+    ```
+    url = https://用户名:密码@github.com/组织名/项目名.git
+    ```
     
 4.  进入代码目录，执行安装脚本  
     cd [8gua-test.github.io](http://8gua-test.github.io)  
