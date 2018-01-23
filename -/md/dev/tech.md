@@ -1,4 +1,4 @@
-# 实现概览
+# 八卦博客 · 技术栈
 ## 主要构成
 
 八卦博客主要由以下几个项目构成
@@ -19,7 +19,7 @@
 
 ## 技术碎碎念
 
-前端基于coffeescript、scss，构建工具为webpack，轻度使用了vue，重度使用了jquery。
+前端基于coffeescript、scss 、[slm](https://github.com/slm-lang/slm)，构建工具为webpack，轻度使用了vue，重度使用了jquery。
 
 导航基于vue router，github page中通过自定义404页面实现了任意路径访问。只是，微信客户端会把404响应都重定向到寻找失踪小孩，太囧，想避免此问题，只能靠部署到私有服务器。
 
