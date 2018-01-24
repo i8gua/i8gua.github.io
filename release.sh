@@ -21,9 +21,13 @@ cd $release
 
 mv release/SUMMARY.md ./-/md/\!/SUMMARY.md
 mv release/about.md ./-/md/\!/about.md
-rm -rf .gitignore release.sh id_rsa.enc ./-/md/\!/readme.md ./-/md/help release .travis.yml ./-/S  ./-/md/$
+rm -rf .gitignore release.sh id_rsa.enc \
+    ./-/md/\!/readme.md ./md/\!/readme.md \
+    ./-/md/help ./md/help \
+    release .travis.yml ./-/S  \
+    ./md/$
 > ./-/init.toml
-> ./-/md/SUMMARY.md
+> ./md/SUMMARY.md
 
 git add .
 cp $PREFIX/.gitignore $release
