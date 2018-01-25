@@ -23,7 +23,7 @@ mv release/SUMMARY.md ./md/\!/SUMMARY.md
 mv release/about.md ./md/\!/about.md
 rm -rf .gitignore release.sh id_rsa.enc \
     ./-/md/\!/readme.md ./md/\!/readme.md \
-    ./-/md/help ./md/help \
+    ./-/md/help ./md/help ./-/help \
     release .travis.yml ./-/S  \
     ./md/$
 > ./-/init.toml
