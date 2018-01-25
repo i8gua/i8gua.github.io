@@ -25,10 +25,12 @@ rm -rf .gitignore release.sh id_rsa.enc \
     ./-/md/\!/readme.md ./md/\!/readme.md \
     ./-/md/help ./md/help ./-/help \
     ./-/\!case.md ./md/\!/case.md \
+    ./-/dev ./md/dev \
     release .travis.yml ./-/S  \
-    ./md/$
+    ./-/$/*.md
 > ./-/init.toml
 > ./md/SUMMARY.md
+touch ./-/$/SUMMARY.md
 
 git add .
 cp $PREFIX/.gitignore $release
