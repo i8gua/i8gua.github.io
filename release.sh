@@ -24,6 +24,7 @@ mv release/about.md ./md/\!/about.md
 rm -rf .gitignore release.sh id_rsa.enc \
     ./-/md/\!/readme.md ./md/\!/readme.md \
     ./-/md/help ./md/help ./-/help \
+    ./-/\!case.md ./md/\!/case.md \
     release .travis.yml ./-/S  \
     ./md/$
 > ./-/init.toml
