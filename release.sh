@@ -30,6 +30,7 @@ rm -rf .gitignore release.sh id_rsa.enc \
     ./-/$/*.md
 > ./-/init.toml
 > ./md/SUMMARY.md
+mkdir -p ./-/$
 touch ./-/$/SUMMARY.md
 
 git add .
