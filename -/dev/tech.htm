@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><title>八卦博客 · 开发者导读</title><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><link href=/-/dev/tech rel=canonical><link href=/-S/a7f268797e2cc7467a0d.css rel=stylesheet></head><body><noscript><div class=TC><a href=/-/sitemap.htm>索引</a></div></noscript><script src=/-S/init7eb1f429.js></script><script src=/-S/a7f26879.js></script><div class="Pbox"><div class="C macS"><div class="TXT"><h1>八卦博客 · 开发者导读</h1><h2 id="-">主要构成</h2>
+<p>八卦博客主要由以下几个项目构成</p>
+<ul>
+<li><p>前端代码 <a href="https://github.com/8gua-blog/blog">https://github.com/8gua-blog/blog</a><br>前端打包发布用了一个单独的仓库 <a href="https://gitee.com/blog-8gua/blog-8gua">https://gitee.com/blog-8gua/blog-8gua</a></p>
+</li>
+<li><p>命令行 <a href="https://github.com/8gua-blog/8gua-cli">https://github.com/8gua-blog/8gua-cli</a></p>
+</li>
+<li><p>后端服务器(本机启动) <a href="https://github.com/8gua-blog/8gua-srv">https://github.com/8gua-blog/8gua-srv</a></p>
+</li>
+</ul>
+<h2 id="-">实现原理</h2>
+<p>用户在本地启动一个服务进程，然后就可以在浏览器中直接写作。</p>
+<p>当用户发布文章时，服务进程能自动推送更新到事前绑定git仓库。</p>
+<h2 id="-">技术碎碎念</h2>
+<p>前端基于coffeescript、scss 、<a href="https://github.com/slm-lang/slm">slm</a>，构建工具为webpack，轻度使用了vue，重度使用了jquery。</p>
+<p>导航基于vue router，github page中通过自定义404页面实现了任意路径访问。只是，微信客户端会把404响应都重定向到寻找失踪小孩，太囧，想避免此问题，只能靠部署到私有服务器。</p>
+<p>首页站点标题的中文字体使用了 font-spider来生成，由于github page缓存的原因，通常需要等十分钟才能生效。</p>
+<p>文本编辑器基于medium-editor，发布时会通过turndown将html转为markdown，保存在 ./-/md 目录下（<a href="https://gitee.com/i8gua/i8gua/tree/master/-/md/help">比如，此文档的内容</a>）。</p>
+<p>后端基于<a href="https://github.com/fastify">fastify</a>、<a href="https://github.com/websockets/ws">websockets/ws</a> 。</p>
+<p>更多依赖库参见 <a href="https://github.com/8gua-blog/blog/blob/master/src/package.json">前端的package.json</a> ，<a href="https://github.com/8gua-blog/8gua-srv/blob/master/package.json">后端的package.json</a> 。</p>
+<p>所有图标都来自 <a href="http://iconfont.cn/">ICONFONT.CN</a> ，这是神器。</p>
+<h2 id="-">小技巧</h2>
+<p>目录 - 和 ! ，命令行直接操作(比如 cd -)会保存，请用 cd ./- 即可。</p>
+<p>之所以用奇怪的目录，是为了网址的美观。</p>
+<h2 id="-">次要组件</h2>
+<h4 id="-">跑步健身用的打卡工具</h4>
+<p>目前还没为插件开发进行完整的架构设计。</p>
+<p>但是，如果你只是想写个页面，给自己做个临时的小工具，还是有挺方便的方式。</p>
+<p>比如，我为自己写了一个跑步健身用的打卡工具 <a href="https://8gua.blog/timer">https://8gua.blog/timer</a> 。</p>
+<p><a href="https://gitee.com/u8gua/plugin-timer">实现代码见这里</a>，插件启用参见 <a href="https://gitee.com/u8gua/blog/blob/master/src/coffee/plugin.coffee">blog/src/coffee/plugin.coffee</a> ，需要重新打包发版。</p>
+<h4 id="https-">https证书</h4>
+<p><a href="https://github.com/8gua-blog/8gua-blog-ssl">https://github.com/8gua-blog/8gua-blog-ssl</a><br>safari浏览器ajax请求127.0.0.1时如不使用https， 会被阻断，所以需要一个https证书</p>
+<h2 id="-">后续开发</h2>
+<p>接下来，我第一序列的任务是用户和评论系统，第二序列的任务是适配windows系统。</p>
+<p>也有很多小的细节优化可以去做，比如支持图片压缩剪裁、利用service worker加速网站访问、编写linux init.d启动脚本等等。</p>
+<p><a href="https://github.com/i8gua/i8gua.github.io/issues?q=is%3Aissue+is%3Aopen+label%3ATODO">任务列表见这里</a>，欢迎大家参与并贡献代码。</p>
+<p>我的邮箱 <a href="mailto:i@8gua.blog">i@8gua.blog</a></p>
+</div></div></div></body></html>
