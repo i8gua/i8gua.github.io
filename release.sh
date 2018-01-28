@@ -28,6 +28,7 @@ rm -rf .gitignore release.sh id_rsa.enc \
     ./-/dev ./md/dev \
     release .travis.yml ./-/S  \
     ./-/$/*.md
+    ./-/sitemap.*
 > ./-/init.toml
 > ./md/SUMMARY.md
 mkdir -p ./-/$
