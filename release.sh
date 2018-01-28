@@ -27,7 +27,7 @@ rm -rf .gitignore release.sh id_rsa.enc \
     ./-/\!case.md ./md/\!/case.md \
     ./-/dev ./md/dev \
     release .travis.yml ./-/S  \
-    ./-/$/*.md robots.txt\
+    ./-/$/*.md robots.txt sogousiteverification.txt \
     ./-/sitemap.*
 > ./-/init.toml
 > ./md/SUMMARY.md
