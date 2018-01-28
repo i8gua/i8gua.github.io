@@ -1,1 +1,75 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><title></title><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><link href=/-/help/setup rel=canonical><link href=/-S/a7f268797e2cc7467a0d.css rel=stylesheet></head><body><noscript><h1><a href=/sitemap.html>索引</a></h1></noscript><script src=/-S/init7eb1f429.js></script><script src=/-S/a7f26879.js></script><div class="Pbox"><div class="C macS"><div class="TXT"><h1></h1></div></div></div></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><title>八卦博客 · 开始使用</title><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><link href=/-/help/setup rel=canonical><link href=/-S/a7f268797e2cc7467a0d.css rel=stylesheet></head><body><noscript><h1><a href=/-/sitemap.html>索引</a></h1></noscript><script src=/-S/init7eb1f429.js></script><script src=/-S/a7f26879.js></script><div class="Pbox"><div class="C macS"><div class="TXT"><h1>八卦博客 · 开始使用</h1><h2 id="-">如何安装</h2>
+<h3 id="mac-">MAC 系统</h3>
+<p>我们以<a href="https://pages.github.com">GITHUB PAGE</a>为例 ( 同样支持 <a href="http://git.mydoc.io/?t=154714">码云页面</a> 、<a href="https://pages.bitbucket.io">BITBUCKET PAGE</a> )</p>
+<ol>
+<li><p><a href="https://github.com/organizations/new">点击这里</a>，在github上新建组织，比如 8gua-test</p>
+</li>
+<li><p>在组织下面创建项目，项目名为『组织名称.github.io』( 比如 <a href="http://8gua-test.github.io">8gua-test.github.io</a> )</p>
+</li>
+<li><p>git clone 代码到本机，请通过ssh的方式克隆，以确保git push不需要输入密码<br>如果不想配置密钥，可以参考如下的在 .git/config 中写入用户名、密码</p>
+<pre><code>[remote &quot;origin&quot;] 
+    url = https://用户名:密码@github.com/组织名/项目名.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+</code></pre></li>
+<li><p>进入代码目录，执行安装脚本</p>
+<pre><code>cd 8gua-test.github.io  
+curl -Ls https://git.io/vNRzu | bash /dev/stdin
+</code></pre></li>
+<li><p>部署代码</p>
+<pre><code>git add . 
+git commit -m&quot;init&quot;
+git push -f
+</code></pre></li>
+<li>访问网站</li>
+</ol>
+<h2 id="linux">Linux</h2>
+<p>先用系统的包管理安装node和git 。</p>
+<p>系统包中node版本有时候太老，我们运行以下命令更新。</p>
+<pre><code>npm install -g n
+n stable
+</code></pre><p>接下来安装8gua</p>
+<pre><code>npm install -g 8gua
+</code></pre><p>最后，同样，进入github page仓库的目录，运行8gua</p>
+<p>另外需要用守护进程启动后台服务</p>
+<pre><code>8gua run
+</code></pre><h2 id="8gua-">8gua 命令用法</h2>
+<p>运行</p>
+<pre><code>8gua -h
+</code></pre><p>可以查看帮助，如果需要查看某个命令的参数的帮助，比如get命令，可以运行</p>
+<pre><code>8gua -h get
+</code></pre><h2 id="-">小技巧</h2>
+<p>如果你不小心在其他目录运行了8gua，多了一堆模板文件，可以运行以下的命令来清理。</p>
+<pre><code>git clean -f -d
+</code></pre><h2 id="-">部署到私有服务器</h2>
+<p>静态博客，自然可以随处部署。</p>
+<p>nginx配置文件<a href="https://gitee.com/u8gua/tool/blob/master/nginx.8gua.conf">参考这里</a> ，其中用到的https免费证书，可使用 <a href="https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E">acme.sh</a> 来自动生成。</p>
+<p>caddy配置文件<a href="https://gitee.com/u8gua/tool/blob/master/Caddyfile">参考这里</a>。</p>
+<h3 id="-">持续集成</h3>
+<p>持续集成，就是当后台自动push修改后，私有服务器上自动更新网页。</p>
+<p>可以使用<a href="https://travis-ci.org/">Travis CI</a>配合github来实现此需求。</p>
+<ol>
+<li><p>访问 <a href="https://travis-ci.com/">travis-ci.com</a> ，打开项目构建开关</p>
+</li>
+<li><p>在本机安装travis (先确保ruby已经安装，gem命令可用)。<br>sudo gem install travis</p>
+</li>
+<li><p>运行 travis login ， 输入github的用户名密码。</p>
+</li>
+<li><p>在仓库根目录新建 .travis.yml ，并git add</p>
+</li>
+<li><p>用travis加密添加登录是有服务器的私钥到仓库</p>
+<p><code>travis encrypt-file ~/.ssh/id_rsa --add</code></p>
+<p><code>git add id_rsa.enc</code></p>
+<p>然后，请把 .travis.yml 中 openssl 这一行的 ~\/.ssh 改为 ~/.ssh</p>
+</li>
+<li><p>在私有服务器上git clone代码仓库到目录</p>
+</li>
+<li><p>参考<a href="https://gitee.com/u8gua/tool/blob/master/.travis.yml">此配置文件</a>，修改你的.travis.yml</p>
+</li>
+<li><p>push仓库，即可实现自动触发更新</p>
+</li>
+</ol>
+<h4 id="-">拓展阅读</h4>
+<ul>
+<li><a href="http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html">持续集成服务 Travis CI 教程</a></li>
+</ul>
+</div></div></div></body></html>
