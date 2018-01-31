@@ -5,3 +5,4 @@
  * [八卦博客 · 更新日志](help/log.md)
 * [开发笔记](dev)
  * [八卦博客 · 开发者导读](dev/tech.md)
+ * [整合了python和bash的神器 — xonsh](dev/2018-01-31.md)
