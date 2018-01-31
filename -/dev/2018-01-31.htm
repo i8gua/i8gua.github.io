@@ -10,7 +10,7 @@ from json import load, dump
 import toml
 import sys
 
-\_\_dirname = dirname(abspath(\_\_file__))
+__dirname = dirname(abspath(__file__))
 sys.path.append(__dirname)
 from dnspod import Dnspod
 from config import CONFIG
@@ -20,7 +20,7 @@ VERSION_INCR = 1
 def main():
 
     root = dirname(dirname(__dirname))
-    version\_toml\_path = join(root, &#39;.release.version.toml&#39;)
+    version_toml_path = join(root, &#39;.release.version.toml&#39;)
     package_path = join(
         root,
         &quot;package.json&quot;
@@ -36,23 +36,23 @@ def main():
     git add -u
 
     try:
-        version\_toml = toml.load(version\_toml_path)
+        version_toml = toml.load(version_toml_path)
     except:
         version_toml = {}
 
     if re.findall(&quot;nothing.* to commit&quot;, $(git st), re.S):
-        last_commit = $(git log -1).split(&quot;\\n&quot;,1)\[0\].split(&quot; &quot;,1)\[-1\]
-        if last\_commit in version\_toml:
-            print(f&quot;commit {last\_commit} released version {version\_toml\[last_commit\]}&quot;)
+        last_commit = $(git log -1).split(&quot;\n&quot;,1)[0].split(&quot; &quot;,1)[-1]
+        if last_commit in version_toml:
+            print(f&quot;commit {last_commit} released version {version_toml[last_commit]}&quot;)
             return
 
     with open(package_path) as f:
         package = load(f)
-        version = package\[&#39;version&#39;\]
+        version = package[&#39;version&#39;]
         version = list(map(int, version.split(&quot;.&quot;)))
-        version\[-1\]+=VERSION_INCR
+        version[-1]+=VERSION_INCR
         version = &quot;.&quot;.join(map(str, version))
-        package\[&#39;version&#39;\] = version
+        package[&#39;version&#39;] = version
 
     with open(package_path,&quot;w&quot;) as f:
         dump(package, f, indent=4, sort_keys=True)
@@ -63,17 +63,17 @@ def main():
 
 
     cd @(release_path)
-    find . | grep -vE &#39;\\.git/|.git$|\\.$|\\.\\.</body>#39; | xargs rm -rf
+    find . | grep -vE &#39;\.git/|.git$|\.$|\.\.</body>#39; | xargs rm -rf
 
     cd @(root)
-    print(f&quot;&gt;&gt; cd {root}&quot;)
+    print(f&quot;&amp;gt;&amp;gt; cd {root}&quot;)
     git add -u
     git commit -m @(comment)
-    last_commit = $(git log -1).split(&quot;\\n&quot;,1)\[0\].split(&quot; &quot;,1)\[-1\]
+    last_commit = $(git log -1).split(&quot;\n&quot;,1)[0].split(&quot; &quot;,1)[-1]
 
     git archive master | tar -x -C @(release_path)
 
-    print(f&quot;&gt;&gt; cd {release_path}&quot;)
+    print(f&quot;&amp;gt;&amp;gt; cd {release_path}&quot;)
     cd @(release_path)
 
     rm -rf nodemon.json .gitignore dev py *.md test LICENSE release.sh
@@ -87,9 +87,9 @@ def main():
     git push origin master
     git push github master
 
-    version\_toml\[last\_commit\] = version
+    version_toml[last_commit] = version
 
-    with open(version\_toml\_path, &quot;w&quot;) as f:
+    with open(version_toml_path, &quot;w&quot;) as f:
         toml.dump(version_toml, f)
 
     dnspod_update(version)
@@ -101,6 +101,6 @@ def dnspod_update(version):
     dnspod.update(domain, &quot;cli-git&quot;, &quot; &quot;.join(CONFIG.GIT))
 
 
-if \_\_name\_\_ == &quot;\_\_main\_\_&quot;:
+if __name__ == &quot;__main__&quot;:
     main()
 </code></pre></div></div></div></body></html>
