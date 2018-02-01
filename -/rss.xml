@@ -2,16 +2,16 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>八卦博客</title>
 <subtitle>字符构建的时空</subtitle>
-<id>ent: *</id>
-<link rel="alternate" type="text/html" href="ent: *"/>
-<link rel="self" type="application/atom+xml" href="ent: */-/rss.xml"/>
-<updated>2018-02-01T13:57:55Z</updated>
+<id>https://8gua.blog</id>
+<link rel="alternate" type="text/html" href="https://8gua.blog"/>
+<link rel="self" type="application/atom+xml" href="https://8gua.blog/-/rss.xml"/>
+<updated>2018-02-01T14:01:20Z</updated>
 <entry><id>-/dev/2018-01-31</id>
-<link rel="alternate" type="text/html" href="ent: */-/dev/2018-01-31.htm" />
+<link rel="alternate" type="text/html" href="https://8gua.blog/-/dev/2018-01-31.htm" />
 <title>整合了python和bash的神器 — xonsh</title>
-<published>2018-02-01T13:57:55Z</published>
-<updated>2018-02-01T13:57:55Z</updated>
-<content type="html" xml:base="ent: *"><![CDATA[<h1>整合了python和bash的神器 — xonsh</h1><h2 id="xonsh">xonsh</h2>
+<published>2018-02-01T14:01:20Z</published>
+<updated>2018-02-01T14:01:20Z</updated>
+<content type="html" xml:base="https://8gua.blog"><![CDATA[<h1>整合了python和bash的神器 — xonsh</h1><h2 id="xonsh">xonsh</h2>
 <p>Python-powered, cross-platform, Unix-gazing shell <a href="http://xon.sh">http://xon.sh</a></p>
 <h2 id="-">演示代码</h2>
 <p>比如我最近写了这样一个python+bash的脚本。</p>
