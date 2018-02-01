@@ -26,7 +26,7 @@ rm -rf .gitignore release.sh id_rsa.enc \
     ./-/md/\!/readme.md ./md/\!/readme.md \
     ./-/md/help ./md/help ./-/help \
     ./-/\!case.md ./md/\!/case.md \
-    ./-/dev ./md/dev \
+    ./-/dev ./md/dev ./-/rss.xml \
     release .travis.yml ./-/S  \
     ./-/$/*.md sogousiteverification.txt \
     ./-/sitemap.*
