@@ -21,13 +21,14 @@ cd $release
 
 mv release/SUMMARY.md ./md/\!/SUMMARY.md
 mv release/about.md ./md/\!/about.md
+mv release/robots.txt ./
 rm -rf .gitignore release.sh id_rsa.enc \
     ./-/md/\!/readme.md ./md/\!/readme.md \
     ./-/md/help ./md/help ./-/help \
     ./-/\!case.md ./md/\!/case.md \
     ./-/dev ./md/dev \
     release .travis.yml ./-/S  \
-    ./-/$/*.md robots.txt sogousiteverification.txt \
+    ./-/$/*.md sogousiteverification.txt \
     ./-/sitemap.*
 > ./-/init.toml
 > ./md/SUMMARY.md
