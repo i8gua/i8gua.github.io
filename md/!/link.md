@@ -19,6 +19,9 @@
 *   [iconfont.cn](http://iconfont.cn) : 图标字体
 *   [tabletag.net](http://tabletag.net) : HTML表格生成器
 *   [realfavicongenerator.net](https://realfavicongenerator.net) : 站点小图标生成器
+*   [纹理背景图](https://www.transparenttextures.com/)
+*   [jsDelivr : 支持中国大陆的CDN  
+    ](https://www.jsdelivr.com/features)
 
 ---
 
